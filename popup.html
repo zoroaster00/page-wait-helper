@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      button {
+        height: 30px;
+        width: 150px;
+        outline: none;
+      }
+      .input-container {
+        display: flex;
+        flex-flow: column-reverse;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="startButton">START</button>
+    <span id="waitingMessage">WAITING...</span>
+    <button id="cancelButton">CANCEL</button>
+    <div class="input-container">
+      <input id="waitTarget" type="number"><label for="waitTarget"></label>
+    </div>
+    <div class="input-container">
+      <input id="nickname" type="text"><label for="nickname"></label>
+    </div>
+    <div class="input-container">
+      <input id="token" type="text"><label for="token"></label>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
